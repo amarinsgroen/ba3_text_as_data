@@ -21,6 +21,7 @@ Each week lists required **Orange Data Mining Tutorials**.
 - They are short (≈5–10 minutes each) and introduce the widgets you will use hands-on.  
 - Watching them in advance will free up class time and have you better prepared for applying methods to Korean corpora.
 
+👉 You can download the Orange Data Mining application **[HERE](https://orangedatamining.com/)**  
 👉 Tutorials (to watch before class) are available here: [Orange Data Mining Tutorials (YouTube Playlist)](https://www.youtube.com/playlist?list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy)
 
 ---
