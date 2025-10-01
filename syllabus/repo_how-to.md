@@ -74,7 +74,7 @@ DH-TopicalReading-YourSurname/
 
 ## 5. Commit Your Work Each Week  
 Every week you will:  
-1. Write your reflection in the `.md` file.  
+1. Write your reflection in an `.md` file.  
 2. Save your Orange screenshots in the `screenshots/` folder.  
 3. On GitHub, click **Add file → Upload files** to add them.  
 4. Type a short message (like “Week 1 assignment”) and click **Commit changes**.  
@@ -91,12 +91,12 @@ At the start of the course:
 ## 7. Managing Your Repo  
 
 Your GitHub repo is just a **copy of a folder structure on your computer**.  
-Think of it as a backpack: one version is on your laptop, the other is online in the cloud.  
-If you keep your backpack organized locally, it will stay organized online.  
+Think of it as a backup: one version is on your laptop, the other is online in the cloud.  
+If you keep your backup organized locally, it will stay organized online.  
 You can clone a repo to any computer.
 
 ### Step 1: Choose a Good Location on Your Computer  
-- Make a folder in a clear place (e.g., `Documents` or `Desktop`).  
+- Make a folder in a clear place (e.g., `Documents`).  
 - Name it the same as your repo:  
 
 ```
