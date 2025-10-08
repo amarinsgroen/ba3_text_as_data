@@ -52,6 +52,27 @@ In addition to attending weekly sessions, you are required to complete **weekly 
 
 ---
 
+## Optional: R Programming Extensions  
+
+Students interested in developing foundational R programming skills alongside the DH strand are encouraged to explore the **R Programming Extensions**. These optional activities complement our work with Orange Data Mining and offer pathways to begin coding and analyzing text directly in R.
+
+We will make use of two platforms:
+- **Swirl** — interactive, in-R tutorials for learning R at your own pace  
+  👉 [https://swirlstats.com/students.html](https://swirlstats.com/students.html)  
+- **DataCamp** — an online learning platform with a dedicated class account  
+
+All enrolled students have access to the shared **DataCamp classroom**. The primary course to complete there is:  
+👉 [Introduction to Text Analysis in R](https://app.datacamp.com/learn/courses/introduction-to-text-analysis-in-r)
+
+Additional short modules may be assigned later, depending on time and fit.
+
+**Assessment policy for the optional R Programming track:**  
+- **Extra credit** will be awarded upon satisfactory completion of the designated lessons or modules (up to .25 points added to the final DH strand grade).  
+- Students who opt in but do not complete required lessons may receive a **minor penalty** to their DH strand grade.  
+  Opt in only if you plan to finish.
+
+---
+
 ## GitHub Repository Requirement  
 See the ["how-to" guide](repo_how-to.md) (located in the syllabus folder) on how to get started with GitHub and repo management.
 
