@@ -52,7 +52,30 @@ There are two main goals for this week:
   - Include a screenshot showing that you have successfully installed Orange Data Mining.  
   - Include a screenshot of your **local file structure**, showing that you have:  
     - Successfully set up your own repository locally, and  
-    - Cloned the course repository (for practice and easy access to shared materials).  
+    - Cloned the course repository (for practice and easy access to shared materials).
+   
+---
+
+## 🧠 Optional Programming Lessons: Swirl R Tutorials  
+*Optional but incentivized; see notes on extra credit and penalties in the Syllabus.*
+
+**What:** Complete Swirl interactive R lessons inside RStudio.  
+**How to start:** See the Swirl student guide → [https://swirlstats.com/students.html](https://swirlstats.com/students.html)
+
+**Required if you opt in:**
+1. **R Programming** (Swirl course)
+2. **Getting and Cleaning Data** (Swirl course)
+   - Complete at least the first 3–4 lessons (focus on data tidiness and basic transformation).
+3. Upload a screenshot of your Swirl progress indicating completion to your **`screenshots/week1`** folder. Note, I require that you do this in **R Studio** (Swirl recommends it; I require it).
+
+**Optional Swirl lessons:**
+- **Data Analysis** (selected lessons)  
+  - *Looking at Data*  
+  - *Subsetting Vectors*  
+
+**Opt-in & tracking requirements (as noted in the Syllabus):**
+- If you choose to do the additional programming option, **must indicate** your participation on the GitHub link Google Sheet:  
+  [https://docs.google.com/spreadsheets/d/1iVdwLTfmVkMn2cQGXPxCC4YIxADawSKAWltZIxD5WMs/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1iVdwLTfmVkMn2cQGXPxCC4YIxADawSKAWltZIxD5WMs/edit?gid=0#gid=0)  
 
 ---
 
