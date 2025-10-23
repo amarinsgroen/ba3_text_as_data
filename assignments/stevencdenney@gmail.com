@@ -53,11 +53,4 @@ For students in the **R Programming extension**, complete:
 
 R track assignments are due **before the next class**.  
 
----
-
-## ▶️ Resources  
-- **Slides:** Review the Week 2 “From Raw Text to Visual Patterns” slides on Brightspace.  
-
----
-
 
