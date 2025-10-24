@@ -3,5 +3,4 @@ TopicalReading_Class_Attendance_2526S1.xlsx
 pyproject.toml
 .python-version
 uv.lock
-*.ows
 /osw_instructors
