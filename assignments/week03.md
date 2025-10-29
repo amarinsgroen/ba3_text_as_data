@@ -16,11 +16,12 @@ Learn how text preprocessing and weighting schemes (raw counts vs. TF-IDF) affec
 
 ## 🧩 Tasks
 
-### 1. **Read and Reflect on Text Preprocessing** (Python file) - Mac Users ONLY (for now...)
+### 1. **Read and Reflect on Text Preprocessing** (Python file) - Mac Users ONLY originally (note update for Windows users; workable file now exists)
    - Open and read through the annotated `.py` file on text preprocessing. It's in the `/data` folder. Note: there are files with and without annotations. You can use either, but it's cleaner to use the one without in ODM.
    - Try running the custom Python script; it keeps only nouns (common and proper nouns), FYI.
    - If yes, continue using it. If no, that's fine; revert to your previous preprocessing pipeline.
    - Let us know in your `README.md` for this week if it worked, any questions you have, etc. 
+   - UPDATE: Windows fix was added (still a little buggy; Windows users can, in fact, try this step and report back to me.)
 
 ### 2. **Compare Word Counts vs. TF-IDF**
    
