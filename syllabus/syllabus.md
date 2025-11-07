@@ -170,7 +170,7 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 
 ---
 
-### Final Project (Nov. 28)
+### Final Project (Dec. 05)
 
 The final project will take the form of an **in-person, four-hour “hackathon”** held in the DH Lab. Working in small groups, students will complete a text-as-data analysis project that draws directly on the skills developed in this six-week strand of the course.
 
