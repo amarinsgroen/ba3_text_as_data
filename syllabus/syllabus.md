@@ -142,7 +142,7 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 - **Lecture:** Frequency, keywords, word clouds. From descriptive to interpretive claims.  
 - **Hands-On:** Group analysis of corpora, frequency/word cloud outputs, keyword contrasts, clustering/projection.  
 - **Tutorials:** *Text Clustering, Multivariate Projection (Freeviz)*.  
-- **Deliverable:** Word cloud + clustering screenshot + reflection.  
+- **Deliverable:** Word cloud + reflections.  
 
 ---
 
@@ -150,7 +150,7 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 - **Lecture:** Supervised methods, labels, evaluation, and applications in thesis research.  
 - **Hands-On:** Apply sentiment classification, evaluate accuracy, discuss limits.  
 - **Tutorials:** *Text Classification, Making Predictions, Model Evaluation*.  
-- **Deliverable:** Classification screenshot + reflection.  
+- **Deliverable:** Sentiment analysis + reflections.  
 
 ---
 
@@ -158,7 +158,7 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 - **Lecture:** Unsupervised methods; clustering documents. Strengths and pitfalls.  
 - **Hands-On:** Hierarchical and k-means clustering, silhouette evaluation, interpret clusters.  
 - **Tutorials:** *Hierarchical Clustering, k-Means, Silhouette*.  
-- **Deliverable:** Clustering screenshot + ≈1-page reflection.  
+- **Deliverable:** Clustering + reflections.  
 
 ---
 
