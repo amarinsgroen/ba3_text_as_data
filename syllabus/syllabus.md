@@ -180,7 +180,7 @@ Each group will:
 * Formulate a research question.
 * Design and carry out a workflow in Orange Data Mining.
 * Generate and interpret findings.
-* Write up results and a brief reflection on the process.
+* Write up results and reflections on the process and findings.
 * Submit it to Brightspace.
 
 This is a **timed, in-class assignment** (not a take-home project). Further details will be provided in advance.
