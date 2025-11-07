@@ -142,7 +142,7 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 - **Lecture:** Frequency, keywords, word clouds. From descriptive to interpretive claims.  
 - **Hands-On:** Group analysis of corpora, frequency/word cloud outputs, keyword contrasts, clustering/projection.  
 - **Tutorials:** *Text Clustering, Multivariate Projection (Freeviz)*.  
-- **Deliverable:** Word cloud + clustering screenshot + reflection.  
+- **Deliverable:** Word cloud + reflections.  
 
 ---
 
@@ -150,27 +150,27 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 - **Lecture:** Supervised methods, labels, evaluation, and applications in thesis research.  
 - **Hands-On:** Apply sentiment classification, evaluate accuracy, discuss limits.  
 - **Tutorials:** *Text Classification, Making Predictions, Model Evaluation*.  
-- **Deliverable:** Classification screenshot + reflection.  
+- **Deliverable:** Sentiment analysis + reflections.  
 
 ---
 
 ### Week 5 (Nov. 14): Clustering & Similarity
 - **Lecture:** Unsupervised methods; clustering documents. Strengths and pitfalls.  
-- **Hands-On:** Hierarchical and k-means clustering, silhouette evaluation, interpret clusters.  
-- **Tutorials:** *Hierarchical Clustering, k-Means, Silhouette*.  
-- **Deliverable:** Clustering screenshot + ≈1-page reflection.  
+- **Hands-On:** Hierarchical and k-means clustering, interpret clusters/topics and compare approaches.
+- **Tutorials:** *Hierarchical Clustering, k-Means& Topic Modeling widget demo*.  
+- **Deliverable:** Clustering + reflections.  
 
 ---
 
 ### Week 6 (Nov. 21): Topic Modeling & Wrap-Up
-- **Lecture:** Introduction to topic modeling (LDA). Comparing clusters vs. topics. Designing a DH project.  
-- **Hands-On:** Run topic modeling on a corpus, interpret top words per topic, compare with clustering.  
-- **Tutorials:** *Topic Modeling widget demo*.  
-- **Deliverable:** Topic model output + reflection.  
+- **Lecture:** Review: Comparing clusters vs. topics. Designing a DH project.  
+- **Hands-On:** Review of previous week, final project preparation.
+- **Tutorials:** *Review previous week*.  
+- **Deliverable:** None - group preparation for final project. 
 
 ---
 
-### Final Project (Nov. 28)
+### Final Project (Dec. 05)
 
 The final project will take the form of an **in-person, four-hour “hackathon”** held in the DH Lab. Working in small groups, students will complete a text-as-data analysis project that draws directly on the skills developed in this six-week strand of the course.
 
@@ -180,7 +180,7 @@ Each group will:
 * Formulate a research question.
 * Design and carry out a workflow in Orange Data Mining.
 * Generate and interpret findings.
-* Write up results and a brief reflection on the process.
+* Write up results and reflections on the process and findings.
 * Submit it to Brightspace.
 
 This is a **timed, in-class assignment** (not a take-home project). Further details will be provided in advance.
