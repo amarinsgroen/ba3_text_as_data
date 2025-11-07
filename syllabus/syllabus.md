@@ -156,17 +156,17 @@ For **supplementary purposes**, additional pre-prepared corpora are available:
 
 ### Week 5 (Nov. 14): Clustering & Similarity
 - **Lecture:** Unsupervised methods; clustering documents. Strengths and pitfalls.  
-- **Hands-On:** Hierarchical and k-means clustering, silhouette evaluation, interpret clusters.  
-- **Tutorials:** *Hierarchical Clustering, k-Means, Silhouette*.  
+- **Hands-On:** Hierarchical and k-means clustering, interpret clusters/topics and compare approaches.
+- **Tutorials:** *Hierarchical Clustering, k-Means& Topic Modeling widget demo*.  
 - **Deliverable:** Clustering + reflections.  
 
 ---
 
 ### Week 6 (Nov. 21): Topic Modeling & Wrap-Up
-- **Lecture:** Introduction to topic modeling (LDA). Comparing clusters vs. topics. Designing a DH project.  
-- **Hands-On:** Run topic modeling on a corpus, interpret top words per topic, compare with clustering.  
-- **Tutorials:** *Topic Modeling widget demo*.  
-- **Deliverable:** Topic model output + reflection.  
+- **Lecture:** Review: Comparing clusters vs. topics. Designing a DH project.  
+- **Hands-On:** Review of previous week, final project preparation.
+- **Tutorials:** *Review previous week*.  
+- **Deliverable:** None - group preparation for final project. 
 
 ---
 
