@@ -36,7 +36,7 @@ In addition to attending weekly sessions, you are required to complete **weekly 
 
 ### Submission
 - Commit your deliverables to your GitHub repository in the appropriate weekly folder (e.g., `week01/`, `week02/`, etc.)  
-- **Deadline:** 17:00 on the Monday following class  
+- **Deadline:** 17:00 on the Monday following class unless otherwise specified.
 - **Grading:**  
   - `2` = fully complete and accurate  
   - `1` = attempted but not fully complete/accurate  
