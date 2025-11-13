@@ -1,0 +1,271 @@
+# Clustering & Vectorization  
+### Digital Humanities: Text-as-Data (BA3 – Korean Studies, Leiden University)
+
+This document expands on the Week 5 slides. It explains how text is converted into numerical vectors, how distance metrics define similarity, and how clustering algorithms use these distances to reveal structure in an unlabeled corpus. It is meant to sit alongside your topic modeling explainer.
+
+---
+
+## 1. What Clustering Does
+
+Clustering is an **unsupervised** method: the algorithm is not told what categories exist. Instead, it discovers structure based on similarity between items.
+
+In text-as-data, clustering answers:
+
+> Which documents “speak” in similar ways, based on their numerical representations?
+
+Two core principles:
+
+- **Cohesion**: items within a cluster should be close together.  
+- **Separation**: different clusters should be far apart.
+
+These ideas only make sense once documents have been transformed into **vectors**.
+
+---
+
+## 2. Why Distance Matters
+
+Clustering is fundamentally geometric. Distance defines the geometry.
+
+### Euclidean distance (L2)
+
+Straight-line distance between vectors:
+
+$$
+d(A, B) = \sqrt{\sum_i (A_i - B_i)^2}
+$$
+
+Euclidean distance is sensitive to vector magnitude. It works well when absolute length (e.g. document size, overall frequency) is meaningful.
+
+### Cosine similarity / cosine distance
+
+Cosine measures **angle**, not magnitude:
+
+$$
+	ext{cosine}(A,B) = rac{A \cdot B}{\lVert A 
+Vert \lVert B 
+Vert}
+$$
+
+Cosine distance is:
+
+$$
+	ext{cosine\_distance}(A,B) = 1 - 	ext{cosine}(A,B)
+$$
+
+Interpretation:
+
+- Small angle (cosine close to 1) → similar distribution of features.  
+- Large angle (cosine near 0 or negative) → different distribution of features.
+
+For text, cosine is usually preferred because document length varies a lot and we care more about **relative term proportions** than raw counts.
+
+---
+
+## 3. Why Text Must Become Numbers
+
+Computers cannot operate on raw text. Every text-as-data method relies on converting documents into numeric representations in a common space.
+
+Two main families:
+
+1. **Lexical (sparse vectors)**  
+   - Bag-of-Words (BoW)  
+   - TF–IDF  
+
+2. **Semantic (dense vectors)**  
+   - Word embeddings  
+   - Document embeddings  
+
+Your choice of representation largely determines what “similarity” means.
+
+---
+
+## 4. Route A: Bag-of-Words and TF–IDF
+
+### Bag-of-Words (BoW)
+
+BoW represents each document by counts of each word in a fixed vocabulary:
+
+- Extremely high-dimensional (one dimension per term).  
+- Mostly zeros (sparse).  
+- Captures lexical overlap: documents are similar if they use many of the same words.
+
+### TF–IDF
+
+TF–IDF reweights BoW counts to emphasize informative words:
+
+$$
+	ext{TF–IDF}(w,d) = 	ext{TF}(w,d) 	imes \log\left(rac{N}{n_w}
+ight)
+$$
+
+Where:
+
+- $	ext{TF}(w,d)$ = frequency of word $w$ in document $d$  
+- $N$ = total number of documents  
+- $n_w$ = number of documents containing $w$
+
+Intuition:
+
+- Words that are frequent in a single document but rare overall get **high** TF–IDF.  
+- Very common words (appearing everywhere) get **low** TF–IDF.  
+
+This is usually a better starting point than raw counts for clustering documents.
+
+### Distance on TF–IDF
+
+On TF–IDF vectors we typically use **cosine distance**:
+
+- High cosine similarity → documents share a similar profile of weighted terms.  
+- Low cosine similarity → documents emphasize different vocabulary.
+
+This is what drives “documents with similar wording end up in the same cluster”.
+
+---
+
+## 5. Route B: Word and Document Embeddings
+
+Embeddings are dense vectors learned from large corpora. They capture **contextual meaning** rather than raw counts.
+
+Properties:
+
+- Typically 300–768 dimensions  
+- Words/documents that appear in similar contexts get nearby vectors.  
+- Captures **semantic** similarity, not just exact word overlap.
+
+A classic example relation:
+
+$$
+	ext{king} - 	ext{man} + 	ext{woman} pprox 	ext{queen}
+$$
+
+For longer documents (chapters, textbooks), we can aggregate word embeddings or use document-level models. Clusters then reflect **similar meanings, themes, or narrative styles**, rather than just shared vocabulary.
+
+---
+
+## 6. TF–IDF vs Embeddings
+
+A quick comparison:
+
+| Feature           | TF–IDF                     | Embeddings                         |
+|------------------|----------------------------|------------------------------------|
+| Representation   | Sparse term-frequency      | Dense learned vectors              |
+| Captures         | Lexical overlap            | Contextual / semantic similarity   |
+| Dimensionality   | Very high (1 per word)     | Moderate (hundreds)                |
+| Interpretability | High (each dim = a word)   | Lower (dimensions are abstract)    |
+| Best for         | Transparent clustering     | Meaning-based structure            |
+
+In practice:
+
+- Start with TF–IDF if you want clear, inspectable clusters and simple pipelines.  
+- Use embeddings when you care more about deeper semantic relationships.
+
+---
+
+## 7. Clustering Algorithms
+
+This course uses two clustering approaches in Orange: **hierarchical clustering** and **K-Means**.
+
+### Hierarchical clustering
+
+- Starts with each document as its own cluster.  
+- Iteratively merges the closest clusters according to a distance metric and linkage rule.  
+- Produces a **dendrogram** (tree).  
+- You can “cut” the tree at different heights to get different numbers of clusters.
+
+Strengths:
+
+- No need to choose the number of clusters in advance (you explore).  
+- Great for visualizing similarity and identifying natural groupings.
+
+Requirements:
+
+- A full distance matrix (e.g. cosine distances between all document pairs).
+
+### K-Means clustering
+
+K-Means partitions the data into $k$ clusters by minimizing within-cluster variance:
+
+$$
+\min_{\{C_i\}} \sum_{i=1}^{k} \sum_{x \in C_i} \lVert x - \mu_i 
+Vert^2
+$$
+
+Where $C_i$ is cluster $i$ and $\mu_i$ is its centroid.
+
+Algorithm (informally):
+
+1. Choose $k$ (the number of clusters).  
+2. Initialize $k$ centroids (often randomly).  
+3. Assign each document to the nearest centroid.  
+4. Recompute centroids as the mean of their assigned points.  
+5. Repeat until assignments stabilize.
+
+Strengths:
+
+- Fast and scalable.  
+- Works directly on document vectors (no distance matrix needed).  
+
+Limitations:
+
+- You must choose $k$ ahead of time.  
+- Solutions can depend on initialization.
+
+---
+
+## 8. Pipelines in Orange
+
+Below are the main pipelines from the lecture.
+
+### TF–IDF + Hierarchical Clustering
+
+1. Preprocess text  
+2. Bag-of-Words  
+3. TF–IDF  
+4. Distance (cosine)  
+5. Hierarchical Clustering  
+
+### TF–IDF + K-Means
+
+1. Preprocess  
+2. Bag-of-Words → TF–IDF  
+3. K-Means  
+4. Inspect clusters  
+
+### Embeddings + Clustering
+
+1. Preprocess  
+2. Document Embedding  
+3. Distance → Hierarchical Clustering  
+
+or  
+
+1. Preprocess  
+2. Document Embedding  
+3. K-Means  
+
+---
+
+## 9. Interpreting Clusters
+
+Clustering is exploratory. It does not prove categories; it suggests patterns.
+
+Good practice:
+
+- Inspect top terms or features for each cluster.  
+- Read several documents from each cluster.  
+- Look for historical, thematic, or stylistic consistency.  
+- Identify "junk" clusters created by noise or boilerplate.  
+
+---
+
+## 10. Key Takeaways
+
+- Clustering groups documents based on distances between vectors.  
+- Cosine distance is the standard for text.  
+- TF–IDF captures vocabulary patterns; embeddings capture meaning.  
+- Hierarchical clustering visualizes structure; K-Means assigns groups.  
+- Interpretation requires domain knowledge and close reading.
+
+---
+
+Use this alongside the slides and the Orange workflows: slides show *how*, this explainer clarifies *why*.
