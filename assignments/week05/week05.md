@@ -1,5 +1,6 @@
 ## Word Clouds: TF–IDF vs. Word Embeddings  
 *(Files: `cluster_wordclouds_tfidf.png` and `cluster_wordclouds_wordembeddings.png`)*
+**Due:** Thursday, November 20, 2025 by 17:00
 
 For this task, examine the two provided images:
 
